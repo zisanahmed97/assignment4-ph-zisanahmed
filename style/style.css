@@ -60,7 +60,7 @@ border-bottom: 2px solid #323b4930;
 .available-jobs-container{
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -80,14 +80,68 @@ border-bottom: 2px solid #323b4930;
     color: #64748B;
     font-weight: 400;
 }
-.btn{
-    padding: 20px;
+.feature-btn{
+    padding: 10px;
     border: 1px solid grey;
     margin-right: 8px;
     color: #64748B;
-    width: 80px;
+    width: 120px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
 }
 
+#btn-delete{
+    border: 1px solid grey;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+#btn-delete:hover{
+    transition:scale(0.80);
+    background-color: grey;
+
+}
+.job-card{
+    padding: 24px;
+    width: 1200px;
+    margin-top: 20px;
+}
+
+#not-applied-btn{
+    padding: 10px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.167);
+    border-radius: 6px;
+    margin-bottom: 8px;
+
+}
+.btn{
+    padding: 10px;
+    
+}
+.company-name{
+    color: #002C5C;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+}
+.company-position{
+    color: #64748B;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.company-salary{
+    color: #64748B;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+.company-description{
+    color: #323B49;
+    font-size: 0.9;
+    margin-bottom: 20px;
+
+}
 
 
 
