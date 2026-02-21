@@ -13,7 +13,9 @@
 max-width: 1200px;
 margin: 0 auto;
 /* border: 1px solid red; */
-padding-top: 40px;    
+padding-top: 40px; 
+border-bottom: 2px solid #323b4930;   
+
 }
 
 .dashboard-container h2{
@@ -21,11 +23,13 @@ padding-top: 40px;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    
 }
 .dashboard-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 16px;
+   padding-bottom: 30px;
 }
 .card-items{
     background-color: #FFFFFF;
@@ -53,6 +57,36 @@ padding-top: 40px;
     color: #EF4444;
 }
 
+.available-jobs-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.available-jobs-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.available-jobs-title h2{
+    color: #002C5C;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#jobs-number{
+    font-size: 1rem;
+    color: #64748B;
+    font-weight: 400;
+}
+.btn{
+    padding: 20px;
+    border: 1px solid grey;
+    margin-right: 8px;
+    color: #64748B;
+    width: 80px;
+}
 
 
 
