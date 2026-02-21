@@ -150,6 +150,36 @@ border-bottom: 2px solid #323b4930;
 }
 
 
+/* interview */
+.no-jobs-img{
+    max-width: 80px;
+    width: 100%;
+    margin-bottom: 24px;
+    margin: 0 auto;
+}
+.no-jobs-available{
+    color: #002C5C;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+.opportunities{
+    color: #64748B;
+    font-size: 1rem;
+    
+}
+.interview-card{
+    max-width: 1200px;
+    width: 100%;
+    padding: 80px;
+
+}
+.interview-card-body{
+    /* max-width: 500px;
+    margin: 0 auto; */
+    text-align: center;
+}
+
 
 
 
