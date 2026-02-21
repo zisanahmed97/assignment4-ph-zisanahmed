@@ -1,0 +1,70 @@
+.geist{
+    font-family: "Geist", sans-serif;
+     background-color: #F8FAFC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+     
+}
+
+.dashboard-container{
+max-width: 1200px;
+margin: 0 auto;
+/* border: 1px solid red; */
+padding-top: 40px;    
+}
+
+.dashboard-container h2{
+    color: #002C5C;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.dashboard-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+}
+.card-items{
+    background-color: #FFFFFF;
+    padding: 20px;
+
+}
+
+.card-items h3{
+    color: #323B49;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+
+}
+
+.card-items p{
+    color: #002C5C;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#dashboard-interview-count{
+    color: green;
+}
+#dashboard-reject-count{
+    color: #EF4444;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .dashboard-card{
+   
+    grid-template-columns: repeat(1,1fr);
+    margin: 20px;
+  
+}
+}
