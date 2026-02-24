@@ -56,10 +56,11 @@
                 <button class="feature-btn btn-	base-100 ">Rejected</button>
             </div>
 
-            <div class="job-card bg-base-100 w-96 shadow-sm">
+<div id="job-container">
+                <div class="job-card bg-base-100 w-96 shadow-sm">
                 <div class="card-body">
                     <div class="card-actions justify-end">
-                        <button id="btn-delete"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="btn-delete"><i class="fa-solid fa-trash-can"></i></button>
 
                         </button>
                     </div>
@@ -232,15 +233,47 @@ Full-time
 Full-time 
 •
  $130,000 - $175,000</p>
-                        <button id="not-applied-btn">Not Applied</button>
+                        <button class="status-btn">Not Applied</button>
                         <p class="company-description">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.p>
                         <button class="btn btn-outline btn-success">Interview</button>
                         <button class="btn btn-outline btn-error">Rejected</button>
                     </div>
                 </div>
             </div>
+</div>
         </div>
     </section>
+
+
+
+    <!-- interview -->
+
+     <section class="interview">
+ <div  class="interview-card bg-base-100 w-96 shadow-sm hidden">
+                <div class="interview-card-body">
+                 <img class="no-jobs-img" src="./B13-A4-PH-Job-Tracker/jobs.png" alt="">
+                 <h3 class="no-jobs-available">No jobs available</h3>
+                 <p class="opportunities">Check back soon for new job opportunities</p>
+                </div>
+            </div>
+     </section>
+  
+
+
+
+
+<!-- rejected -->
+
+             <div class="interview-card bg-base-100 w-96 shadow-sm hidden">
+                <div class="interview-card-body">
+                 <img class="no-jobs-img" src="./B13-A4-PH-Job-Tracker/jobs.png" alt="">
+                 <h3 id="no-job-message" class="no-jobs-available">No jobs available</h3>
+                 <p class="opportunities">Check back soon for new job opportunities</p>
+                </div>
+            </div>
+
+
+    <script src="./script/script.js"></script>
 
 </body>
 
