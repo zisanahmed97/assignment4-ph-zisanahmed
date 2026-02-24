@@ -8,6 +8,7 @@ var totalCount = document.getElementById("total-count");
 var interviewCount = document.getElementById("dashboard-interview-count");
 var rejectCount = document.getElementById("dashboard-reject-count");
 var jobsNumber = document.getElementById("jobs-number");
+var filterButtons = document.getElementsByClassName("feature-btn");
 
 function updateCount() {
     var cards = document.getElementsByClassName("job-card");
@@ -20,6 +21,50 @@ function updateCount() {
 }
 
 updateCount();
+
+
+
+for (var i = 0; i < filterButtons.length; i++) {
+
+    filterButtons[i].onclick = function () {
+
+        var text = this.innerText.toLowerCase();
+        currentFilter = text;
+
+        applyFilter();
+    }
+}
+
+function applyFilter() {
+
+    var cards = document.getElementsByClassName("job-card");
+
+    for (var i = 0; i < cards.length; i++) {
+
+        var statusBtn = cards[i].querySelector(".status-btn");
+        var statusText = statusBtn.innerText.toLowerCase();
+
+        if (currentFilter == "all") {
+            cards[i].style.display = "block";
+        }
+        else if (currentFilter == "interview") {
+
+            if (statusText == "interview") {
+                cards[i].style.display = "block";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+        else if (currentFilter == "rejected") {
+
+            if (statusText == "rejected") {
+                cards[i].style.display = "block";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+}
 
 jobContainer.onclick = function (event) {
 
@@ -73,5 +118,6 @@ if (event.target.closest(".btn-delete")) {
     }
 }
 updateCount();
+applyFilter();
 }
 
