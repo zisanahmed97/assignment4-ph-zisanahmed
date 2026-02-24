@@ -21,3 +21,28 @@ function updateCount() {
 
 updateCount();
 
+jobContainer.onclick = function (event) {
+
+    var card = event.target.closest(".job-card");
+    if (!card) return;
+
+    var companyName = card.querySelector(".company-name").innerText;
+    var statusBtn = card.querySelector(".status-btn");
+
+    if (event.target.classList.contains("btn-success")) {
+
+        statusBtn.innerText = "Interview";
+
+        if (interviewList.indexOf(companyName) == -1) {
+            interviewList.push(companyName);
+        }
+
+        var index = rejectedList.indexOf(companyName);
+        if (index != -1) {
+            rejectedList.splice(index, 1);
+        }
+
+     
+    }
+}
+
