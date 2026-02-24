@@ -41,8 +41,23 @@ jobContainer.onclick = function (event) {
         if (index != -1) {
             rejectedList.splice(index, 1);
         }
-
-     
     }
+
+
+    if (event.target.classList.contains("btn-error")) {
+
+    statusBtn.innerText = "Rejected";
+
+    if (rejectedList.indexOf(companyName) == -1) {
+        rejectedList.push(companyName);
+    }
+
+    var index2 = interviewList.indexOf(companyName);
+    if (index2 != -1) {
+        interviewList.splice(index2, 1);
+    }
+
+
+}
 }
 
