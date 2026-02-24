@@ -56,8 +56,22 @@ jobContainer.onclick = function (event) {
     if (index2 != -1) {
         interviewList.splice(index2, 1);
     }
-
-
 }
+
+if (event.target.closest(".btn-delete")) {
+
+    card.remove();
+
+    var i1 = interviewList.indexOf(companyName);
+    if (i1 != -1) {
+        interviewList.splice(i1, 1);
+    }
+
+    var i2 = rejectedList.indexOf(companyName);
+    if (i2 != -1) {
+        rejectedList.splice(i2, 1);
+    }
+}
+updateCount();
 }
 
